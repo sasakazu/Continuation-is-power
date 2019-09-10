@@ -1,0 +1,6 @@
+framework module Pods_ContinuationIsPowerTests {
+  umbrella header "Pods-ContinuationIsPowerTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
