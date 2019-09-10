@@ -8,7 +8,8 @@ target 'ContinuationIsPower' do
   # Pods for ContinuationIsPower
   
   pod 'Firebase'
-
+  pod 'Firebase/Core'
+  pod 'Firebase/Firestore'
   
   
 
