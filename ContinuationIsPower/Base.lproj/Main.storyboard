@@ -10,7 +10,22 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--My Set-->
+        <!--View Controller-->
+        <scene sceneID="KpX-hn-Xjy">
+            <objects>
+                <viewController id="G3d-cg-qft" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="en8-vX-NyW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="F32-e7-FKL"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a6e-SU-pMv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1713" y="-1003"/>
+        </scene>
+        <!--Continuation is power-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="mySet" customModule="ContinuationIsPower" customModuleProvider="target" sceneMemberID="viewController">
@@ -41,13 +56,35 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="3wV-j4-XXJ">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="FEM-rJ-UyY"/>
+                    <navigationItem key="navigationItem" title="Continuation is power" id="dmN-vz-aum">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="lGz-lN-xuZ">
+                            <connections>
+                                <segue destination="SNe-sv-Ang" kind="show" id="yiZ-e0-4xM"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="G3d-cg-qft" kind="show" id="gWq-jX-P7R"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1713.0434782608697" y="-298.66071428571428"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wUC-Oi-IC1">
+            <objects>
+                <viewController id="SNe-sv-Ang" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="82F-gN-VVd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="VnP-3E-s9v"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h7m-gA-tQ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2548" y="-299"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="DAR-i0-aei">
@@ -78,7 +115,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="DTc-la-6y2"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Acount" id="xvR-wW-C65"/>
+                    <tabBarItem key="tabBarItem" title="Acount" image="people" id="xvR-wW-C65"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jbU-7p-LGT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -88,7 +125,7 @@
         <scene sceneID="1X3-AA-uhn">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aNq-b8-I45" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="mySET" id="ADu-gP-MMS"/>
+                    <tabBarItem key="tabBarItem" title="mySET" image="dumbel" id="ADu-gP-MMS"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8og-9U-jh1">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -104,4 +141,8 @@
             <point key="canvasLocation" x="802.89855072463774" y="-298.66071428571428"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="dumbel" width="32" height="32"/>
+        <image name="people" width="32" height="32"/>
+    </resources>
 </document>
