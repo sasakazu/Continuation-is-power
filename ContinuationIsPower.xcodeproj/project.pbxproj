@@ -16,6 +16,8 @@
 		73F56B432327A45F008AFC52 /* ContinuationIsPowerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F56B422327A45F008AFC52 /* ContinuationIsPowerUITests.swift */; };
 		73F56B512327A6EB008AFC52 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73F56B502327A6EB008AFC52 /* GoogleService-Info.plist */; };
 		73F56B532327AC24008AFC52 /* mySet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F56B522327AC24008AFC52 /* mySet.swift */; };
+		73F56B55232900D9008AFC52 /* addSetMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F56B54232900D9008AFC52 /* addSetMenu.swift */; };
+		73F56B5823290132008AFC52 /* setMenuDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F56B5723290132008AFC52 /* setMenuDetail.swift */; };
 		88A9D1B6BA5917BF7F759A03 /* Pods_ContinuationIsPowerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD92187D29DF6667B8E07B9 /* Pods_ContinuationIsPowerUITests.framework */; };
 		DE451A50F121015F55CE3856 /* Pods_ContinuationIsPowerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F14285D54FCD9A6AB204244 /* Pods_ContinuationIsPowerTests.framework */; };
 		EE1A787C051CE0396FBE10BA /* Pods_ContinuationIsPower.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7230B73657CF2ED4F71D876 /* Pods_ContinuationIsPower.framework */; };
@@ -58,6 +60,8 @@
 		73F56B442327A45F008AFC52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73F56B502327A6EB008AFC52 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		73F56B522327AC24008AFC52 /* mySet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mySet.swift; sourceTree = "<group>"; };
+		73F56B54232900D9008AFC52 /* addSetMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = addSetMenu.swift; path = "../New Group/addSetMenu.swift"; sourceTree = "<group>"; };
+		73F56B5723290132008AFC52 /* setMenuDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setMenuDetail.swift; sourceTree = "<group>"; };
 		9F14285D54FCD9A6AB204244 /* Pods_ContinuationIsPowerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ContinuationIsPowerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A779BA29F59F0EB7F0748354 /* Pods-ContinuationIsPowerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContinuationIsPowerUITests.release.xcconfig"; path = "Target Support Files/Pods-ContinuationIsPowerUITests/Pods-ContinuationIsPowerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C7230B73657CF2ED4F71D876 /* Pods_ContinuationIsPower.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ContinuationIsPower.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,10 +122,10 @@
 		73F56B212327A45E008AFC52 /* ContinuationIsPower */ = {
 			isa = PBXGroup;
 			children = (
+				73F56B56232900E4008AFC52 /* SetMenu */,
 				73F56B222327A45E008AFC52 /* AppDelegate.swift */,
 				73F56B242327A45E008AFC52 /* ViewController.swift */,
 				73F56B262327A45E008AFC52 /* Main.storyboard */,
-				73F56B522327AC24008AFC52 /* mySet.swift */,
 				73F56B502327A6EB008AFC52 /* GoogleService-Info.plist */,
 				73F56B292327A45F008AFC52 /* Assets.xcassets */,
 				73F56B2B2327A45F008AFC52 /* LaunchScreen.storyboard */,
@@ -146,6 +150,16 @@
 				73F56B442327A45F008AFC52 /* Info.plist */,
 			);
 			path = ContinuationIsPowerUITests;
+			sourceTree = "<group>";
+		};
+		73F56B56232900E4008AFC52 /* SetMenu */ = {
+			isa = PBXGroup;
+			children = (
+				73F56B54232900D9008AFC52 /* addSetMenu.swift */,
+				73F56B522327AC24008AFC52 /* mySet.swift */,
+				73F56B5723290132008AFC52 /* setMenuDetail.swift */,
+			);
+			path = SetMenu;
 			sourceTree = "<group>";
 		};
 		DF88FD7398F01767C8C7EEAC /* Frameworks */ = {
@@ -411,6 +425,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				73F56B532327AC24008AFC52 /* mySet.swift in Sources */,
+				73F56B55232900D9008AFC52 /* addSetMenu.swift in Sources */,
+				73F56B5823290132008AFC52 /* setMenuDetail.swift in Sources */,
 				73F56B252327A45E008AFC52 /* ViewController.swift in Sources */,
 				73F56B232327A45E008AFC52 /* AppDelegate.swift in Sources */,
 			);

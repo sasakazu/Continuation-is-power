@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Set Menu Detail-->
         <scene sceneID="KpX-hn-Xjy">
             <objects>
-                <viewController id="G3d-cg-qft" sceneMemberID="viewController">
+                <viewController id="G3d-cg-qft" customClass="setMenuDetail" customModule="ContinuationIsPower" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="en8-vX-NyW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -71,20 +71,39 @@
             </objects>
             <point key="canvasLocation" x="1713.0434782608697" y="-298.66071428571428"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Set Menu-->
         <scene sceneID="wUC-Oi-IC1">
             <objects>
-                <viewController id="SNe-sv-Ang" sceneMemberID="viewController">
+                <viewController id="SNe-sv-Ang" customClass="addSetMenu" customModule="ContinuationIsPower" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="82F-gN-VVd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="SetMenuName" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0ht-V6-rNZ">
+                                <rect key="frame" x="20" y="145" width="374" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="VnP-3E-s9v"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Tld-3O-cQj">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="ice-Sx-LOK">
+                            <connections>
+                                <action selector="saveBtn:" destination="SNe-sv-Ang" id="f6Y-jU-xYX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="setmenuTF" destination="0ht-V6-rNZ" id="Rdk-or-d0n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h7m-gA-tQ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2548" y="-299"/>
+            <point key="canvasLocation" x="2547.826086956522" y="-299.33035714285711"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="DAR-i0-aei">
