@@ -322,6 +322,18 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="alphaKG" destination="dWG-7A-OkB" id="lwy-p1-vdf"/>
+                        <outlet property="alphaRep" destination="LaE-l9-JuK" id="wCc-Dz-Mwp"/>
+                        <outlet property="kg1" destination="YHc-EN-W5F" id="xe4-KK-bWb"/>
+                        <outlet property="kg2" destination="3mA-rC-qnI" id="av3-nM-86j"/>
+                        <outlet property="kg3" destination="4jZ-IE-KDy" id="7qh-af-bDV"/>
+                        <outlet property="kg4" destination="kYJ-wM-h3v" id="EcE-Wx-cmL"/>
+                        <outlet property="kg5" destination="Tiu-lD-oQb" id="sNF-VN-4qO"/>
+                        <outlet property="rep1" destination="EXc-Ti-go5" id="Xha-3p-bAf"/>
+                        <outlet property="rep2" destination="XS6-uq-yUg" id="I5L-0I-uEB"/>
+                        <outlet property="rep3" destination="h2p-dy-xI1" id="tvX-AR-yM9"/>
+                        <outlet property="rep4" destination="Bvj-2M-yzN" id="PCk-Ue-DtK"/>
+                        <outlet property="rep5" destination="MFO-kR-yG1" id="Bwc-Be-LQP"/>
                         <outlet property="setmenuTF" destination="0ht-V6-rNZ" id="Rdk-or-d0n"/>
                     </connections>
                 </viewController>
