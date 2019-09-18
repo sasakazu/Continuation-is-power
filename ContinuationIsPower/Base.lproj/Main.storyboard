@@ -64,6 +64,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="tableview" destination="D8b-Ku-tGY" id="fje-4D-c81"/>
                         <segue destination="G3d-cg-qft" kind="show" id="gWq-jX-P7R"/>
                     </connections>
                 </viewController>
