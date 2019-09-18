@@ -47,7 +47,7 @@ class addSetMenu: UIViewController {
         
          let db = Firestore.firestore()
         
-        
+        let postid = NSUUID().uuidString
         
         let docData: [String: Any] = [
             "セットネーム": setmenuTF.text ?? "",
@@ -62,7 +62,8 @@ class addSetMenu: UIViewController {
             "5セットKG": kg5.text ?? "",
             "5セットRep": rep5.text ?? "",
             "プラスアルファKG": alphaKG.text ?? "",
-            "プラスアルファRep": alphaRep.text ?? ""
+            "プラスアルファRep": alphaRep.text ?? "",
+            "PostID": postid 
             
             
             ]
