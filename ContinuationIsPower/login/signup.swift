@@ -7,15 +7,56 @@
 //
 
 import UIKit
+import Firebase
 
 class signup: UIViewController {
+    
+    
+    @IBOutlet weak var emailTF: UITextField!
+    @IBOutlet weak var passwordTF: UITextField!
+    @IBOutlet weak var passConfilmTF: UITextField!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
 
-
+    @IBAction func signUp(_ sender: Any) {
+        
+        
+        Auth.auth().createUser(withEmail: emailTF.text!, password: passwordTF.text!) { user, err in
+            
+            if let err = err {
+                print("Error writing document: \(err)")
+            }
+                
+            else {
+                print("Document successfully written!")
+            }
+            
+            
+            
+        }
+    }
+    
+    
+    
+    
+    @IBAction func logout(_ sender: Any) {
+        
+        let firebaseAuth = Auth.auth()
+        
+        do {
+            try firebaseAuth.signOut()
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        
+        }
+        
+    }
+    
+    
+    
 }

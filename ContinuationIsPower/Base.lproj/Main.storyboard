@@ -369,6 +369,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="login:" destination="2bi-nu-bAG" eventType="touchUpInside" id="WBv-i4-L0i"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5mJ-es-RR7">
                                 <rect key="frame" x="20" y="330" width="374" height="30"/>
@@ -381,10 +384,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="l0m-UG-vWG"/>
                     </view>
+                    <connections>
+                        <outlet property="email" destination="3Tv-o3-rYR" id="uQ0-eB-fhP"/>
+                        <outlet property="password" destination="5mJ-es-RR7" id="qNx-ts-fgh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JVT-MH-BA8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3504.347826086957" y="148.66071428571428"/>
+            <point key="canvasLocation" x="-2068" y="92"/>
         </scene>
         <!--Signup-->
         <scene sceneID="ROz-lT-E8e">
@@ -427,15 +434,34 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Sign up"/>
+                                <connections>
+                                    <action selector="signUp:" destination="ggx-wL-njL" eventType="touchUpInside" id="Sqz-bm-FlX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ug-Bg-1aD">
+                                <rect key="frame" x="173" y="827" width="68" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <state key="normal" title="Log out">
+                                    <color key="titleColor" red="1" green="0.066105379729999997" blue="0.043282995900000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="logout:" destination="ggx-wL-njL" eventType="touchUpInside" id="k7C-yg-eSx"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Be4-Z7-8D3"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTF" destination="5DQ-Qf-u8u" id="iLf-BY-CZO"/>
+                        <outlet property="passConfilmTF" destination="Wgo-DZ-58S" id="Ve2-XQ-uvt"/>
+                        <outlet property="passwordTF" destination="Iu9-3d-17v" id="0UU-oC-1fR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a35-uK-WpL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2720" y="149"/>
+            <point key="canvasLocation" x="-1284" y="92"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="DAR-i0-aei">
@@ -456,10 +482,10 @@
             </objects>
             <point key="canvasLocation" x="-228" y="92"/>
         </scene>
-        <!--View Controller-->
+        <!--Acount-->
         <scene sceneID="VqE-Mk-cPt">
             <objects>
-                <viewController id="ZZt-yV-nz8" sceneMemberID="viewController">
+                <viewController id="ZZt-yV-nz8" customClass="acount" customModule="ContinuationIsPower" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QD7-nZ-FvO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

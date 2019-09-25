@@ -7,16 +7,40 @@
 //
 
 import UIKit
+import Firebase
 
 class login: UIViewController {
+    
+    
+    @IBOutlet weak var email: UITextField!
+    @IBOutlet weak var password: UITextField!
+    
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
     }
     
 
  
+    @IBAction func login(_ sender: Any) {
+        
+        Auth.auth().signIn(withEmail: email.text!, password: password.text!) { (user, error) in
+            
+            
+            if let error = error {
+                print(error.localizedDescription)
+                return
+            }
+            
+            print("login success")
+            
+            
+        }
 
+        
+    }
+    
 }

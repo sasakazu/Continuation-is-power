@@ -21,6 +21,7 @@
 		73F56B5823290132008AFC52 /* setMenuDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F56B5723290132008AFC52 /* setMenuDetail.swift */; };
 		73FE6BD4233B2307007C7C12 /* login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FE6BD3233B2307007C7C12 /* login.swift */; };
 		73FE6BD6233B231F007C7C12 /* signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FE6BD5233B231F007C7C12 /* signup.swift */; };
+		73FE6BD9233B7D5E007C7C12 /* acount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FE6BD8233B7D5E007C7C12 /* acount.swift */; };
 		88A9D1B6BA5917BF7F759A03 /* Pods_ContinuationIsPowerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD92187D29DF6667B8E07B9 /* Pods_ContinuationIsPowerUITests.framework */; };
 		DE451A50F121015F55CE3856 /* Pods_ContinuationIsPowerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F14285D54FCD9A6AB204244 /* Pods_ContinuationIsPowerTests.framework */; };
 		EE1A787C051CE0396FBE10BA /* Pods_ContinuationIsPower.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7230B73657CF2ED4F71D876 /* Pods_ContinuationIsPower.framework */; };
@@ -68,6 +69,7 @@
 		73F56B5723290132008AFC52 /* setMenuDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setMenuDetail.swift; sourceTree = "<group>"; };
 		73FE6BD3233B2307007C7C12 /* login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = login.swift; sourceTree = "<group>"; };
 		73FE6BD5233B231F007C7C12 /* signup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signup.swift; sourceTree = "<group>"; };
+		73FE6BD8233B7D5E007C7C12 /* acount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = acount.swift; sourceTree = "<group>"; };
 		9F14285D54FCD9A6AB204244 /* Pods_ContinuationIsPowerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ContinuationIsPowerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A779BA29F59F0EB7F0748354 /* Pods-ContinuationIsPowerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContinuationIsPowerUITests.release.xcconfig"; path = "Target Support Files/Pods-ContinuationIsPowerUITests/Pods-ContinuationIsPowerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C7230B73657CF2ED4F71D876 /* Pods_ContinuationIsPower.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ContinuationIsPower.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,6 +138,7 @@
 		73F56B212327A45E008AFC52 /* ContinuationIsPower */ = {
 			isa = PBXGroup;
 			children = (
+				73FE6BD7233B7D4A007C7C12 /* Acount */,
 				73FE6BD2233B22EA007C7C12 /* login */,
 				736EFC6B233239F600DB6412 /* Model */,
 				73F56B56232900E4008AFC52 /* SetMenu */,
@@ -185,6 +188,14 @@
 				73FE6BD5233B231F007C7C12 /* signup.swift */,
 			);
 			path = login;
+			sourceTree = "<group>";
+		};
+		73FE6BD7233B7D4A007C7C12 /* Acount */ = {
+			isa = PBXGroup;
+			children = (
+				73FE6BD8233B7D5E007C7C12 /* acount.swift */,
+			);
+			path = Acount;
 			sourceTree = "<group>";
 		};
 		DF88FD7398F01767C8C7EEAC /* Frameworks */ = {
@@ -396,6 +407,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ContinuationIsPower/Pods-ContinuationIsPower-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
@@ -408,6 +420,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
@@ -452,6 +465,7 @@
 				73F56B532327AC24008AFC52 /* mySet.swift in Sources */,
 				73F56B55232900D9008AFC52 /* addSetMenu.swift in Sources */,
 				736EFC6D23323A0D00DB6412 /* object.swift in Sources */,
+				73FE6BD9233B7D5E007C7C12 /* acount.swift in Sources */,
 				73F56B5823290132008AFC52 /* setMenuDetail.swift in Sources */,
 				73F56B252327A45E008AFC52 /* ViewController.swift in Sources */,
 				73FE6BD6233B231F007C7C12 /* signup.swift in Sources */,

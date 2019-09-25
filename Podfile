@@ -10,6 +10,7 @@ target 'ContinuationIsPower' do
   pod 'Firebase'
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
+  pod 'Firebase/Auth'
   
   
 

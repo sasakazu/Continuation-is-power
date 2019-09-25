@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "45CAB3E68BBBBA3BB8D39C7C077C554D"
+               BlueprintIdentifier = "9778034A1DA00ED9B0BA27A99F1ACE1F"
                BuildableName = "nanopb.framework"
                BlueprintName = "nanopb"
                ReferencedContainer = "container:Pods.xcodeproj">
