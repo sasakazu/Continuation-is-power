@@ -20,10 +20,14 @@ class acount: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let user = Auth.auth().currentUser
+        if let user = Auth.auth().currentUser {
+            
         
-        emailLabel.text = user?.email
-
+        
+            emailLabel.text = user.email
+        
+        
+        }
 
     }
     

@@ -526,6 +526,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="emailLabel" destination="P3T-7h-mIM" id="U5T-4p-VbS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jbU-7p-LGT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
