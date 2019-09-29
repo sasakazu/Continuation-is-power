@@ -17,13 +17,22 @@
                     <view key="view" contentMode="scaleToFill" id="en8-vX-NyW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pnl-ZT-4NO">
+                                <rect key="frame" x="20" y="140" width="374" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="F32-e7-FKL"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a6e-SU-pMv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1535" y="-1203"/>
+            <point key="canvasLocation" x="1534.7826086956522" y="-1203.3482142857142"/>
         </scene>
         <!--筋トレメニュー-->
         <scene sceneID="tne-QT-ifu">
@@ -311,7 +320,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0JC-1m-yNj" customClass="placeholder">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0JC-1m-yNj" customClass="placeholder" customModule="ContinuationIsPower" customModuleProvider="target">
                                 <rect key="frame" x="20" y="497" width="374" height="216"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -330,7 +339,7 @@
                         <viewLayoutGuide key="safeArea" id="VnP-3E-s9v"/>
                     </view>
                     <navigationItem key="navigationItem" id="Tld-3O-cQj">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="ice-Sx-LOK">
+                        <barButtonItem key="rightBarButtonItem" title="保存" id="ice-Sx-LOK">
                             <connections>
                                 <action selector="saveBtn:" destination="SNe-sv-Ang" id="f6Y-jU-xYX"/>
                             </connections>

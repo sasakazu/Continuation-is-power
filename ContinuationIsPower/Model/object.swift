@@ -32,13 +32,15 @@ class Set {
     var alphaKg:String = ""
     var alphaRep:String = ""
     
+    var postid:String = ""
+    
     init(setname: String,
          kg1:String, rep1:String,
          kg2:String, rep2:String,
          kg3:String, rep3:String,
          kg4:String, rep4:String,
          kg5:String, rep5:String,
-         alphaKg:String, alphaRep:String) {
+         alphaKg:String, alphaRep:String, postid:String) {
         
          self.setName = setname
         
@@ -59,6 +61,8 @@ class Set {
         
          self.alphaKg = alphaKg
          self.alphaRep = alphaRep
+        
+         self.postid = postid
         
         
         

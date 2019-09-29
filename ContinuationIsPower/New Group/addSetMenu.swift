@@ -73,7 +73,7 @@ class addSetMenu: UIViewController, UITextViewDelegate {
 
       
         
-        db.collection("myset").document().setData(docData) { err in
+        db.collection("myset").document(postid).setData(docData) { err in
          
             
             

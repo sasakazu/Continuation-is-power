@@ -28,7 +28,7 @@ import UIKit
     /// ロード後に呼ばれる
     override func awakeFromNib() {
         super.awakeFromNib()
-        delegate = self
+        delegate = self as! UITextViewDelegate
         configurePlaceholder()
         togglePlaceholder()
     }

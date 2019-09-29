@@ -15,6 +15,10 @@ class mySet: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
     var setItem = [Set]()
+    
+    var getPostId:String = ""
+    
+    
 
     @IBOutlet weak var tableview: UITableView!
     
@@ -73,9 +77,11 @@ class mySet: UIViewController, UITableViewDelegate, UITableViewDataSource {
                     let alphakg = chatData["プラスアルファKG"] as? String
                     let alpharep = chatData["プラスアルフアRep"] as? String
                     
+                    let postid = chatData["PostID"] as? String
                     
                     
-                    let newSourse = Set(setname: setname ?? "", kg1: kg1 ?? "", rep1: rep1 ?? "", kg2: kg2 ?? "", rep2: rep2 ?? "", kg3: kg3 ?? "", rep3: rep3 ?? "", kg4: kg4 ?? "", rep4: rep4 ?? "", kg5: kg5 ?? "", rep5: rep5 ?? "", alphaKg: alphakg ?? "", alphaRep: alpharep ?? "")
+                    
+                    let newSourse = Set(setname: setname ?? "", kg1: kg1 ?? "", rep1: rep1 ?? "", kg2: kg2 ?? "", rep2: rep2 ?? "", kg3: kg3 ?? "", rep3: rep3 ?? "", kg4: kg4 ?? "", rep4: rep4 ?? "", kg5: kg5 ?? "", rep5: rep5 ?? "", alphaKg: alphakg ?? "", alphaRep: alpharep ?? "", postid: postid ?? "")
                     
                     self.setItem.append(newSourse)
                     
@@ -96,6 +102,8 @@ class mySet: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     
+    
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
        
         let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
@@ -105,5 +113,18 @@ class mySet: UIViewController, UITableViewDelegate, UITableViewDataSource {
         return cell
         
     }
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        
+        self.getPostId = setItem[indexPath.row].postid
+        
+        
+        print(getPostId)
+        
+    }
+    
+    
 
 }
