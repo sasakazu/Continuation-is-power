@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class addSetMenu: UIViewController {
+class addSetMenu: UIViewController, UITextViewDelegate {
     
     
     @IBOutlet weak var setmenuTF: UITextField!
@@ -32,13 +32,15 @@ class addSetMenu: UIViewController {
     @IBOutlet weak var alphaKG: UITextField!
     @IBOutlet weak var alphaRep: UITextField!
     
+    @IBOutlet weak var memoView: UITextView!
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
+        memoView.layer.cornerRadius = 3.0
+    
     }
     
 
@@ -63,6 +65,7 @@ class addSetMenu: UIViewController {
             "5セットRep": rep5.text ?? "",
             "プラスアルファKG": alphaKG.text ?? "",
             "プラスアルファRep": alphaRep.text ?? "",
+            "メモ": memoView.text ?? "",
             "PostID": postid 
             
             
@@ -88,9 +91,5 @@ class addSetMenu: UIViewController {
     
     
     
-    
-    
-    
-    
-    
 }
+
