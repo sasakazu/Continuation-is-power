@@ -126,5 +126,38 @@ class mySet: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     
+    //セルの編集許可
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool
+    {
+        return true
+    }
+    
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+     
+            
+            
+             if editingStyle == UITableViewCell.EditingStyle.delete {
+            
+            let db = Firestore.firestore()
+            
+            
+            db.collection("myset").document(getPostId).delete() { err in
+                if let err = err {
+                    print("Error removing document: \(err)")
+                } else {
+                    
+                    self.setItem.remove(at: indexPath.row)
+                   
+                    tableView.deleteRows(at: [indexPath], with: .fade)
+
+                    
+                    print("Document successfully removed!")
+                }
+            }
+        
+        
+        }
+    }
 
 }

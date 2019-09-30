@@ -66,6 +66,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="筋トレメニュー" id="dmN-vz-aum">
+                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="pEm-6G-8zU"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="lGz-lN-xuZ">
                             <connections>
                                 <segue destination="SNe-sv-Ang" kind="show" id="tZ9-sm-fcB"/>
