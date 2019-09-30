@@ -137,10 +137,11 @@ class mySet: UIViewController, UITableViewDelegate, UITableViewDataSource {
      
             
             
-             if editingStyle == UITableViewCell.EditingStyle.delete {
+            if editingStyle == UITableViewCell.EditingStyle.delete {
             
             let db = Firestore.firestore()
-            
+                
+            self.getPostId = setItem[indexPath.row].postid
             
             db.collection("myset").document(getPostId).delete() { err in
                 if let err = err {
