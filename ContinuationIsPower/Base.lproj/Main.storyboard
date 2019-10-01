@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pnl-ZT-4NO">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="トレーニングネーム" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pnl-ZT-4NO">
                                 <rect key="frame" x="20" y="140" width="374" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -29,6 +29,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="F32-e7-FKL"/>
                     </view>
+                    <connections>
+                        <outlet property="setName" destination="Pnl-ZT-4NO" id="1qZ-xL-dH8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a6e-SU-pMv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -66,7 +69,6 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="筋トレメニュー" id="dmN-vz-aum">
-                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="pEm-6G-8zU"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="lGz-lN-xuZ">
                             <connections>
                                 <segue destination="SNe-sv-Ang" kind="show" id="tZ9-sm-fcB"/>
@@ -75,7 +77,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableview" destination="D8b-Ku-tGY" id="fje-4D-c81"/>
-                        <segue destination="G3d-cg-qft" kind="show" id="gWq-jX-P7R"/>
+                        <segue destination="G3d-cg-qft" kind="show" identifier="goDetail" id="gWq-jX-P7R"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

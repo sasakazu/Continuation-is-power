@@ -7,13 +7,26 @@
 //
 
 import UIKit
+import Firebase
+
 
 class setMenuDetail: UIViewController {
+    
+    
+    var getID:String = ""
+    
+    @IBOutlet weak var setName: UILabel!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print(getID)
+        
+        setName.text = getID
 
-        // Do any additional setup after loading the view.
+        
+        
     }
     
 

@@ -123,6 +123,9 @@ class mySet: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         print(getPostId)
         
+        self.performSegue(withIdentifier: "goDetail",sender: nil)
+
+        
     }
     
     
@@ -160,5 +163,21 @@ class mySet: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         }
     }
+    
+    
+//    send id
+ 
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "goDetail") {
+            let secondVC: setMenuDetail = (segue.destination as? setMenuDetail)!
+            
+            
+            secondVC.getID = getPostId
+        }
+    }
+    
+    
+    
 
 }
