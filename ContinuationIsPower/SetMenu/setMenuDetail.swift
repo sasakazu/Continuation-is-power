@@ -41,6 +41,8 @@ class setMenuDetail: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        memoView.layer.cornerRadius = 5.0
+        
        
         let db = Firestore.firestore()
         
