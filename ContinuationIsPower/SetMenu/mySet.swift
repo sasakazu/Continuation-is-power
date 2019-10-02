@@ -8,8 +8,7 @@
 
 import UIKit
 import Firebase
-
-
+import GoogleMobileAds
 
 class mySet: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -18,13 +17,24 @@ class mySet: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var getPostId:String = ""
     
-    
+    var bannerView: GADBannerView!
 
     @IBOutlet weak var tableview: UITableView!
+   
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        bannerView = GADBannerView(adSize: kGADAdSizeBanner)
+        
+        addBannerViewToView(bannerView)
+        
+        
+        bannerView.adUnitID = "ca-app-pub-5047644305890156/5036152761"
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
+        
         
         
         let db = Firestore.firestore()
@@ -175,6 +185,30 @@ class mySet: UIViewController, UITableViewDelegate, UITableViewDataSource {
             
             secondVC.getID = getPostId
         }
+    }
+    
+    
+    
+//    admob
+    func addBannerViewToView(_ bannerView: GADBannerView) {
+        bannerView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(bannerView)
+        view.addConstraints(
+            [NSLayoutConstraint(item: bannerView,
+                                attribute: .bottom,
+                                relatedBy: .equal,
+                                toItem: bottomLayoutGuide,
+                                attribute: .top,
+                                multiplier: 1,
+                                constant: 0),
+             NSLayoutConstraint(item: bannerView,
+                                attribute: .centerX,
+                                relatedBy: .equal,
+                                toItem: view,
+                                attribute: .centerX,
+                                multiplier: 1,
+                                constant: 0)
+            ])
     }
     
     

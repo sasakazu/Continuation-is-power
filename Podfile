@@ -11,6 +11,7 @@ target 'ContinuationIsPower' do
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
   pod 'Firebase/Auth'
+  pod 'Google-Mobile-Ads-SDK'
   
   
 
