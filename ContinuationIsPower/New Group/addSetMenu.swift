@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class addSetMenu: UIViewController, UITextViewDelegate {
+class addSetMenu: UIViewController, UITextViewDelegate, UITextFieldDelegate {
     
     
     @IBOutlet weak var setmenuTF: UITextField!
@@ -40,7 +40,29 @@ class addSetMenu: UIViewController, UITextViewDelegate {
         super.viewDidLoad()
         
         memoView.layer.cornerRadius = 3.0
+        
+        setmenuTF.delegate = self
+        
+        kg1.delegate = self
+        rep1.delegate = self
     
+        kg2.delegate = self
+        rep2.delegate = self
+        
+        kg3.delegate = self
+        rep3.delegate = self
+        
+        kg4.delegate = self
+        rep4.delegate = self
+        
+        kg5.delegate = self
+        rep5.delegate = self
+        
+        alphaKG.delegate = self
+        alphaRep.delegate = self
+    
+        memoView.delegate = self
+        
     }
     
 
@@ -90,6 +112,47 @@ class addSetMenu: UIViewController, UITextViewDelegate {
     }
     
     
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+       
+        setmenuTF.resignFirstResponder()
+        
+        kg1.resignFirstResponder()
+        rep1.resignFirstResponder()
+        
+        kg2.resignFirstResponder()
+        rep2.resignFirstResponder()
+        
+        kg3.resignFirstResponder()
+        rep3.resignFirstResponder()
+        
+        kg4.resignFirstResponder()
+        rep4.resignFirstResponder()
+        
+        kg5.resignFirstResponder()
+        rep5.resignFirstResponder()
+        
+        alphaKG.resignFirstResponder()
+        alphaRep.resignFirstResponder()
+        
+        memoView.resignFirstResponder()
+        
+        
+        return true
+    
+    
+    }
+    
+    // hides text views
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        
+        if (text == "\n") {
+            
+            memoView.resignFirstResponder()
+            return false
+        }
+        return true
+    }
     
 }
 

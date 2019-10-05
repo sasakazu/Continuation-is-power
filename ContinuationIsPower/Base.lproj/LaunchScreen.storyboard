@@ -18,22 +18,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Continuation is power" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PDi-MM-zgN">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Continuation is power" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PDi-MM-zgN">
                                 <rect key="frame" x="88" y="433" width="238" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="238" id="5wh-x5-9vI"/>
+                                    <constraint firstAttribute="height" constant="30" id="c7Y-m6-afb"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="継続は力なり" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMf-Ya-ALF">
-                                <rect key="frame" x="155" y="395" width="104" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="継続は力なり" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMf-Ya-ALF">
+                                <rect key="frame" x="137" y="393" width="140" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="KQ3-ak-53u"/>
+                                    <constraint firstAttribute="height" constant="21" id="UZ2-F0-Ga6"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fMf-Ya-ALF" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="07t-F3-7yR"/>
+                            <constraint firstItem="PDi-MM-zgN" firstAttribute="top" secondItem="fMf-Ya-ALF" secondAttribute="bottom" constant="19" id="69O-oF-4z3"/>
+                            <constraint firstItem="fMf-Ya-ALF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="137" id="Icp-h5-WFO"/>
+                            <constraint firstItem="PDi-MM-zgN" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Q0q-t6-BDa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fMf-Ya-ALF" secondAttribute="trailing" constant="137" id="XwW-OL-I45"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PDi-MM-zgN" secondAttribute="trailing" constant="88" id="ZYN-XA-3I3"/>
+                            <constraint firstItem="fMf-Ya-ALF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="349" id="dhI-MC-y9D"/>
+                            <constraint firstItem="PDi-MM-zgN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="88" id="uVZ-ml-fu2"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
