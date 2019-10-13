@@ -817,7 +817,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0JC-1m-yNj" customClass="placeholder" customModule="ContinuationIsPower" customModuleProvider="target">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0JC-1m-yNj" customClass="InspectableTextView" customModule="ContinuationIsPower" customModuleProvider="target">
                                 <rect key="frame" x="30" y="497" width="364" height="224"/>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -828,7 +828,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedString" value="Memoだよvn;dfkvlod"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedString" value="Memoだよ"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="delegate" destination="SNe-sv-Ang" id="9Nu-AT-151"/>
