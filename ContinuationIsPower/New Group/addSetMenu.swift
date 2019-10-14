@@ -32,14 +32,17 @@ class addSetMenu: UIViewController, UITextViewDelegate, UITextFieldDelegate {
     @IBOutlet weak var alphaKG: UITextField!
     @IBOutlet weak var alphaRep: UITextField!
     
-    @IBOutlet weak var memoView: UITextView!
+//    @IBOutlet weak var memoView: UITextView!
     
+    @IBOutlet weak var goalTF: UITextField!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        memoView.layer.cornerRadius = 3.0
+//        memoView.layer.cornerRadius = 3.0
+        
+        goalTF.layer.cornerRadius = 3.0
         
         setmenuTF.delegate = self
         
@@ -61,7 +64,10 @@ class addSetMenu: UIViewController, UITextViewDelegate, UITextFieldDelegate {
         alphaKG.delegate = self
         alphaRep.delegate = self
     
-        memoView.delegate = self
+//        memoView.delegate = self
+        
+        goalTF.delegate = self
+        
         
     }
     
@@ -87,7 +93,8 @@ class addSetMenu: UIViewController, UITextViewDelegate, UITextFieldDelegate {
             "5セットRep": rep5.text ?? "",
             "プラスアルファKG": alphaKG.text ?? "",
             "プラスアルファRep": alphaRep.text ?? "",
-            "メモ": memoView.text ?? "",
+            "メモ": goalTF.text ?? "",
+            
             "PostID": postid 
             
             
@@ -135,7 +142,9 @@ class addSetMenu: UIViewController, UITextViewDelegate, UITextFieldDelegate {
         alphaKG.resignFirstResponder()
         alphaRep.resignFirstResponder()
         
-        memoView.resignFirstResponder()
+//        memoView.resignFirstResponder()
+        goalTF.resignFirstResponder()
+        
         
         
         return true
@@ -143,16 +152,18 @@ class addSetMenu: UIViewController, UITextViewDelegate, UITextFieldDelegate {
     
     }
     
-    // hides text views
-    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
-        
-        if (text == "\n") {
-            
-            memoView.resignFirstResponder()
-            return false
-        }
-        return true
-    }
+//    // hides text views
+//    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+//
+//        goalTF.resignFirstResponder()
+//
+////        if (text == "\n") {
+//
+////            memoView.resignFirstResponder()
+////            return false
+////        }
+//        return true
+//    }
     
 }
 
