@@ -86,6 +86,17 @@ class setMenuDetail: UIViewController {
         
     }
     
+    
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+         if (segue.identifier == "goEditView") {
+             let editVC: editSetMenu = (segue.destination as? editSetMenu)!
+             
+             
+             editVC.editID = getID
+         }
+     }
 
   
 
