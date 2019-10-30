@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		732B7C902352D61800A9D76A /* InspectableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732B7C8F2352D61800A9D76A /* InspectableTextView.swift */; };
 		736EFC6D23323A0D00DB6412 /* object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736EFC6C23323A0D00DB6412 /* object.swift */; };
+		73CD5C282369398E00C35F14 /* moreTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CD5C272369398E00C35F14 /* moreTableView.swift */; };
+		73CD5C2A2369463B00C35F14 /* moreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CD5C292369463B00C35F14 /* moreViewController.swift */; };
 		73F56B232327A45E008AFC52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F56B222327A45E008AFC52 /* AppDelegate.swift */; };
 		73F56B252327A45E008AFC52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F56B242327A45E008AFC52 /* ViewController.swift */; };
 		73F56B282327A45E008AFC52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73F56B262327A45E008AFC52 /* Main.storyboard */; };
@@ -49,6 +51,8 @@
 		5AC75AA46ED66CF59DFF0FF8 /* Pods-ContinuationIsPower.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContinuationIsPower.debug.xcconfig"; path = "Target Support Files/Pods-ContinuationIsPower/Pods-ContinuationIsPower.debug.xcconfig"; sourceTree = "<group>"; };
 		732B7C8F2352D61800A9D76A /* InspectableTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectableTextView.swift; sourceTree = "<group>"; };
 		736EFC6C23323A0D00DB6412 /* object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = object.swift; sourceTree = "<group>"; };
+		73CD5C272369398E00C35F14 /* moreTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moreTableView.swift; sourceTree = "<group>"; };
+		73CD5C292369463B00C35F14 /* moreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moreViewController.swift; sourceTree = "<group>"; };
 		73F56B1F2327A45E008AFC52 /* ContinuationIsPower.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContinuationIsPower.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73F56B222327A45E008AFC52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73F56B242327A45E008AFC52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +113,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		73CD5C262369391500C35F14 /* More */ = {
+			isa = PBXGroup;
+			children = (
+				73CD5C272369398E00C35F14 /* moreTableView.swift */,
+				73CD5C292369463B00C35F14 /* moreViewController.swift */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
 		73F56B162327A45E008AFC52 = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +149,7 @@
 			children = (
 				736EFC6B233239F600DB6412 /* Model */,
 				73F56B56232900E4008AFC52 /* SetMenu */,
+				73CD5C262369391500C35F14 /* More */,
 				73F56B222327A45E008AFC52 /* AppDelegate.swift */,
 				73F56B242327A45E008AFC52 /* ViewController.swift */,
 				73F56B262327A45E008AFC52 /* Main.storyboard */,
@@ -444,6 +458,8 @@
 				73F56B55232900D9008AFC52 /* addSetMenu.swift in Sources */,
 				736EFC6D23323A0D00DB6412 /* object.swift in Sources */,
 				73F56B5823290132008AFC52 /* setMenuDetail.swift in Sources */,
+				73CD5C282369398E00C35F14 /* moreTableView.swift in Sources */,
+				73CD5C2A2369463B00C35F14 /* moreViewController.swift in Sources */,
 				732B7C902352D61800A9D76A /* InspectableTextView.swift in Sources */,
 				73F56B252327A45E008AFC52 /* ViewController.swift in Sources */,
 				73F56B232327A45E008AFC52 /* AppDelegate.swift in Sources */,
