@@ -87,6 +87,56 @@ class editSetMenu: UIViewController {
     @IBAction func update(_ sender: Any) {
         
         
+
+           let db = Firestore.firestore()
+          
+       
+          
+          let docData: [String: Any] = [
+              "セットネーム": editName.text ?? "",
+       
+              "1セットKG": oneKG.text ?? "",
+              "1セットRep": oneRep.text ?? "",
+       
+              "2セットKG": twoKG.text ?? "",
+              "2セットRep": twoRep.text ?? "",
+              
+              "3セットKG": threeKG.text ?? "",
+              "3セットRep": threeRep.text ?? "",
+              
+              "4セットKG": fourKG.text ?? "",
+              "4セットRep": fourRep.text ?? "",
+              
+              "5セットKG": fiveKG.text ?? "",
+              "5セットRep": fiveRep.text ?? "",
+              
+              "プラスアルファKG": alphaKG.text ?? "",
+              "プラスアルファRep": alphaRep.text ?? "",
+              
+              "メモ": memoView.text ?? "",
+              
+              
+              
+              ]
+
+        
+          
+          db.collection("myset").document(editID).updateData(docData) { err in
+           
+              
+              
+              if let err = err {
+                  print("Error writing document: \(err)")
+              } else {
+                  print("Document successfully update!")
+              }
+          }
+          
+          self.navigationController?.popToRootViewController(animated: true)
+          
+          
+        
+        
         
     }
     

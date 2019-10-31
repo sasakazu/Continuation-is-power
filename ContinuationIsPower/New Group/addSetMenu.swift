@@ -152,18 +152,5 @@ class addSetMenu: UIViewController, UITextViewDelegate, UITextFieldDelegate {
     
     }
     
-//    // hides text views
-//    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
-//
-//        goalTF.resignFirstResponder()
-//
-////        if (text == "\n") {
-//
-////            memoView.resignFirstResponder()
-////            return false
-////        }
-//        return true
-//    }
-    
 }
 
