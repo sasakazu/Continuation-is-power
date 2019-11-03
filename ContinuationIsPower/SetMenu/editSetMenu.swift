@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class editSetMenu: UIViewController {
+class editSetMenu: UIViewController, UITextFieldDelegate, UITextViewDelegate {
     
     
     var editID:String = ""
@@ -39,6 +39,31 @@ class editSetMenu: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        editName.delegate = self
+        
+        oneKG.delegate = self
+        oneRep.delegate = self
+        
+        twoKG.delegate = self
+        twoRep.delegate = self
+        
+        threeKG.delegate = self
+        threeRep.delegate = self
+        
+        fourKG.delegate = self
+        fourRep.delegate = self
+        
+        fiveKG.delegate = self
+        fiveRep.delegate = self
+        
+        alphaKG.delegate = self
+        alphaRep.delegate = self
+        
+        memoView.delegate = self
+        
+        
+        
         
         print(editID)
         
@@ -142,5 +167,50 @@ class editSetMenu: UIViewController {
     
     
 
+    
+    
+       func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+           
+            editName.resignFirstResponder()
+            
+            oneKG.resignFirstResponder()
+            oneRep.resignFirstResponder()
+            
+
+            twoKG.resignFirstResponder()
+            twoRep.resignFirstResponder()
+
+            threeKG.resignFirstResponder()
+            threeRep.resignFirstResponder()
+
+            fourKG.resignFirstResponder()
+            fourRep.resignFirstResponder()
+
+            fiveKG.resignFirstResponder()
+            fiveRep.resignFirstResponder()
+            
+            alphaKG.resignFirstResponder()
+            alphaRep.resignFirstResponder()
+            
+   
+//            memoView.resignFirstResponder()
+            
+            
+            
+            return true
+        
+        
+        }
+    
+    
+//    func textViewShouldReturn(_ textView: UITextView) -> Bool {
+//
+//          memoView.resignFirstResponder()
+//
+//        return true
+//
+//    }
+    
+    
 
 }
