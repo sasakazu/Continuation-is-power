@@ -1407,7 +1407,7 @@
             </objects>
             <point key="canvasLocation" x="651" y="410"/>
         </scene>
-        <!--More View Controller-->
+        <!--More-->
         <scene sceneID="ORt-g7-mJv">
             <objects>
                 <viewController id="DGK-iu-4al" customClass="moreViewController" customModule="ContinuationIsPower" customModuleProvider="target" sceneMemberID="viewController">
@@ -1431,7 +1431,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="o91-IQ-Fay"/>
                     </view>
-                    <navigationItem key="navigationItem" id="sMv-fr-p3w"/>
+                    <navigationItem key="navigationItem" title="More" id="sMv-fr-p3w"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yod-rh-XOX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1628,6 +1628,27 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2N-t7-xcQ">
+                                <rect key="frame" x="20" y="156" width="374" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="46"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EZg-ok-wOP">
+                                <rect key="frame" x="78" y="423" width="97" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
+                                <state key="normal" title="START"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fEW-In-R8F">
+                                <rect key="frame" x="245" y="423" width="96" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
+                                <state key="normal" title="RESET">
+                                    <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -1641,7 +1662,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zqd-nN-b7f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3632" y="409"/>
+            <point key="canvasLocation" x="3631.884057971015" y="408.81696428571428"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="aTA-dq-q7G">
