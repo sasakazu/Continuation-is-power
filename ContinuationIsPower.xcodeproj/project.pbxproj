@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		730DA6BF2373F87900057A11 /* login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730DA6BE2373F87900057A11 /* login.swift */; };
+		730DA6C32373FABC00057A11 /* signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730DA6C22373FABC00057A11 /* signup.swift */; };
+		730DA6C5237407FD00057A11 /* acount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730DA6C4237407FD00057A11 /* acount.swift */; };
 		736EFC6D23323A0D00DB6412 /* object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736EFC6C23323A0D00DB6412 /* object.swift */; };
 		73C6D72323727B7300331721 /* timeWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C6D72223727B7200331721 /* timeWatch.swift */; };
 		73CD5C282369398E00C35F14 /* moreTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CD5C272369398E00C35F14 /* moreTableView.swift */; };
@@ -50,6 +53,9 @@
 		165CD4300FBD91DF55BEF64A /* Pods-ContinuationIsPowerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContinuationIsPowerUITests.debug.xcconfig"; path = "Target Support Files/Pods-ContinuationIsPowerUITests/Pods-ContinuationIsPowerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		1DD92187D29DF6667B8E07B9 /* Pods_ContinuationIsPowerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ContinuationIsPowerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AC75AA46ED66CF59DFF0FF8 /* Pods-ContinuationIsPower.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContinuationIsPower.debug.xcconfig"; path = "Target Support Files/Pods-ContinuationIsPower/Pods-ContinuationIsPower.debug.xcconfig"; sourceTree = "<group>"; };
+		730DA6BE2373F87900057A11 /* login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = login.swift; path = ContinuationIsPower/login/login.swift; sourceTree = SOURCE_ROOT; };
+		730DA6C22373FABC00057A11 /* signup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = signup.swift; path = ContinuationIsPower/login/signup.swift; sourceTree = SOURCE_ROOT; };
+		730DA6C4237407FD00057A11 /* acount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = acount.swift; sourceTree = "<group>"; };
 		736EFC6C23323A0D00DB6412 /* object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = object.swift; sourceTree = "<group>"; };
 		73C6D72223727B7200331721 /* timeWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timeWatch.swift; sourceTree = "<group>"; };
 		73CD5C272369398E00C35F14 /* moreTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moreTableView.swift; sourceTree = "<group>"; };
@@ -115,12 +121,22 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		73C6D7602373F6DE00331721 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				730DA6BE2373F87900057A11 /* login.swift */,
+				730DA6C22373FABC00057A11 /* signup.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		73CD5C262369391500C35F14 /* More */ = {
 			isa = PBXGroup;
 			children = (
 				73CD5C272369398E00C35F14 /* moreTableView.swift */,
 				73CD5C292369463B00C35F14 /* moreViewController.swift */,
 				73C6D72223727B7200331721 /* timeWatch.swift */,
+				730DA6C4237407FD00057A11 /* acount.swift */,
 			);
 			path = More;
 			sourceTree = "<group>";
@@ -150,6 +166,7 @@
 		73F56B212327A45E008AFC52 /* ContinuationIsPower */ = {
 			isa = PBXGroup;
 			children = (
+				73C6D7602373F6DE00331721 /* Login */,
 				736EFC6B233239F600DB6412 /* Model */,
 				73F56B56232900E4008AFC52 /* SetMenu */,
 				73CD5C262369391500C35F14 /* More */,
@@ -458,13 +475,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				73F56B532327AC24008AFC52 /* mySet.swift in Sources */,
+				730DA6C5237407FD00057A11 /* acount.swift in Sources */,
 				73F3E62423697DC500339E7C /* editSetMenu.swift in Sources */,
 				73F56B55232900D9008AFC52 /* addSetMenu.swift in Sources */,
+				730DA6BF2373F87900057A11 /* login.swift in Sources */,
 				736EFC6D23323A0D00DB6412 /* object.swift in Sources */,
 				73F56B5823290132008AFC52 /* setMenuDetail.swift in Sources */,
 				73CD5C282369398E00C35F14 /* moreTableView.swift in Sources */,
 				73CD5C2A2369463B00C35F14 /* moreViewController.swift in Sources */,
 				73C6D72323727B7300331721 /* timeWatch.swift in Sources */,
+				730DA6C32373FABC00057A11 /* signup.swift in Sources */,
 				73F56B252327A45E008AFC52 /* ViewController.swift in Sources */,
 				73F56B232327A45E008AFC52 /* AppDelegate.swift in Sources */,
 			);

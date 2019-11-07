@@ -26,6 +26,21 @@ class mySet: UIViewController, UITableViewDelegate, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        let user = Auth.auth().currentUser
+             
+         if let user = user {
+            let uid = user.uid
+           
+             
+             print("user id is.....\(uid)")
+        
+        
+        }
+             
+        
+        
+        
         bannerView = GADBannerView(adSize: kGADAdSizeBanner)
         
         addBannerViewToView(bannerView)
