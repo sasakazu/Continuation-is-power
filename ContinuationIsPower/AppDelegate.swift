@@ -22,6 +22,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         GADMobileAds.sharedInstance().start(completionHandler: nil)
         
+        if let _ = Auth.auth().currentUser {
+                  // ログイン中
+                  let storyboard:UIStoryboard =  UIStoryboard(name: "Main",bundle:nil)
+                  window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "FriendsViewController")
+              }
+        
         return true
     }
 

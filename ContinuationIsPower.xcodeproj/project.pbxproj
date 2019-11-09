@@ -11,6 +11,7 @@
 		730DA6C32373FABC00057A11 /* signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730DA6C22373FABC00057A11 /* signup.swift */; };
 		730DA6C5237407FD00057A11 /* acount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730DA6C4237407FD00057A11 /* acount.swift */; };
 		736EFC6D23323A0D00DB6412 /* object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736EFC6C23323A0D00DB6412 /* object.swift */; };
+		736FA8C02376DE6A003117CA /* logout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736FA8BF2376DE6A003117CA /* logout.swift */; };
 		73C6D72323727B7300331721 /* timeWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C6D72223727B7200331721 /* timeWatch.swift */; };
 		73CD5C282369398E00C35F14 /* moreTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CD5C272369398E00C35F14 /* moreTableView.swift */; };
 		73CD5C2A2369463B00C35F14 /* moreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CD5C292369463B00C35F14 /* moreViewController.swift */; };
@@ -57,6 +58,7 @@
 		730DA6C22373FABC00057A11 /* signup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = signup.swift; path = ContinuationIsPower/login/signup.swift; sourceTree = SOURCE_ROOT; };
 		730DA6C4237407FD00057A11 /* acount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = acount.swift; sourceTree = "<group>"; };
 		736EFC6C23323A0D00DB6412 /* object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = object.swift; sourceTree = "<group>"; };
+		736FA8BF2376DE6A003117CA /* logout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logout.swift; sourceTree = "<group>"; };
 		73C6D72223727B7200331721 /* timeWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timeWatch.swift; sourceTree = "<group>"; };
 		73CD5C272369398E00C35F14 /* moreTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moreTableView.swift; sourceTree = "<group>"; };
 		73CD5C292369463B00C35F14 /* moreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moreViewController.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				73CD5C292369463B00C35F14 /* moreViewController.swift */,
 				73C6D72223727B7200331721 /* timeWatch.swift */,
 				730DA6C4237407FD00057A11 /* acount.swift */,
+				736FA8BF2376DE6A003117CA /* logout.swift */,
 			);
 			path = More;
 			sourceTree = "<group>";
@@ -481,6 +484,7 @@
 				730DA6BF2373F87900057A11 /* login.swift in Sources */,
 				736EFC6D23323A0D00DB6412 /* object.swift in Sources */,
 				73F56B5823290132008AFC52 /* setMenuDetail.swift in Sources */,
+				736FA8C02376DE6A003117CA /* logout.swift in Sources */,
 				73CD5C282369398E00C35F14 /* moreTableView.swift in Sources */,
 				73CD5C2A2369463B00C35F14 /* moreViewController.swift in Sources */,
 				73C6D72323727B7300331721 /* timeWatch.swift in Sources */,
