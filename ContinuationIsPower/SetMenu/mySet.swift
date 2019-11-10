@@ -169,9 +169,11 @@ class mySet: UIViewController, UITableViewDelegate, UITableViewDataSource {
             
             let db = Firestore.firestore()
                 
+            let currentuser = Auth.auth().currentUser
+                
             self.getPostId = setItem[indexPath.row].postid
             
-            db.collection("myset").document(getPostId).delete() { err in
+                db.collection("users").document(currentuser!.uid).collection("setmenu").document(getPostId).delete() { err in
                 if let err = err {
                     print("Error removing document: \(err)")
                 } else {
