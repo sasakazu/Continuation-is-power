@@ -63,13 +63,13 @@ class editSetMenu: UIViewController, UITextFieldDelegate, UITextViewDelegate {
         memoView.delegate = self
         
         
-        
+        let currentuser = Auth.auth().currentUser
         
         print(editID)
         
         let db = Firestore.firestore()
               
-              db.collection("myset").document(editID)
+        db.collection("users").document(currentuser!.uid).collection("setmenu").document(editID)
                   .addSnapshotListener { documentSnapshot, error in
                       guard let document = documentSnapshot else {
                           print("Error fetching document: \(error!)")
@@ -113,8 +113,9 @@ class editSetMenu: UIViewController, UITextFieldDelegate, UITextViewDelegate {
         
         
 
-           let db = Firestore.firestore()
+          let db = Firestore.firestore()
           
+          let currentuser = Auth.auth().currentUser
        
           
           let docData: [String: Any] = [
@@ -146,7 +147,7 @@ class editSetMenu: UIViewController, UITextFieldDelegate, UITextViewDelegate {
 
         
           
-          db.collection("myset").document(editID).updateData(docData) { err in
+        db.collection("users").document(currentuser!.uid).collection("setmenu").document(editID).updateData(docData) { err in
            
               
               
@@ -203,13 +204,7 @@ class editSetMenu: UIViewController, UITextFieldDelegate, UITextViewDelegate {
         }
     
     
-//    func textViewShouldReturn(_ textView: UITextView) -> Bool {
-//
-//          memoView.resignFirstResponder()
-//
-//        return true
-//
-//    }
+
     
     
 

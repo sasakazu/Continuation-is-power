@@ -75,7 +75,9 @@ class addSetMenu: UIViewController, UITextViewDelegate, UITextFieldDelegate {
 
     @IBAction func saveBtn(_ sender: Any) {
         
-         let db = Firestore.firestore()
+        let db = Firestore.firestore()
+        
+        let currentuser = Auth.auth().currentUser
         
         let postid = NSUUID().uuidString
         
@@ -102,7 +104,7 @@ class addSetMenu: UIViewController, UITextViewDelegate, UITextFieldDelegate {
 
       
         
-        db.collection("myset").document(postid).setData(docData) { err in
+        db.collection("users").document(currentuser!.uid).collection("setmenu").document(postid).setData(docData) { err in
          
             
             

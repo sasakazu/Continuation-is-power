@@ -54,9 +54,9 @@ class mySet: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         let db = Firestore.firestore()
         
-//        let user = Auth.auth().currentUser
+        let currentuser = Auth.auth().currentUser
         
-        let ref = db.collection("myset")
+        let ref = db.collection("users").document(currentuser!.uid).collection("setmenu")
         
         ref.addSnapshotListener(includeMetadataChanges: true){ (document, error) in
             

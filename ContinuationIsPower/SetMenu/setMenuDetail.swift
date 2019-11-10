@@ -43,10 +43,11 @@ class setMenuDetail: UIViewController {
         
         memoView.layer.cornerRadius = 5.0
         
-       
+        let currentuser = Auth.auth().currentUser
+        
         let db = Firestore.firestore()
         
-        db.collection("myset").document(getID)
+        db.collection("users").document(currentuser!.uid).collection("setmenu").document(getID)
             .addSnapshotListener { documentSnapshot, error in
                 guard let document = documentSnapshot else {
                     print("Error fetching document: \(error!)")
