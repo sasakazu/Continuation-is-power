@@ -67,6 +67,21 @@ class signup: UIViewController, UITextFieldDelegate {
 
                 else {
                     print("Document successfully written!")
+                    
+                    
+                    if let _ = Auth.auth().currentUser {
+                          
+                             let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "FriendsViewController") as! UITabBarController
+                          
+                          secondViewController.modalPresentationStyle = .fullScreen
+                          
+                             self.present(secondViewController, animated: true, completion: nil)
+                          
+                      
+                                
+                             
+                                 }
+                    
                 }
 
 
