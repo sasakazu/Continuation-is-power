@@ -45,9 +45,28 @@ class login: UIViewController, UITextFieldDelegate {
                }
                
                print("login success")
+            
+            
+    if let _ = Auth.auth().currentUser {
+        
+           let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "FriendsViewController") as! UITabBarController
+        
+        secondViewController.modalPresentationStyle = .fullScreen
+        
+           self.present(secondViewController, animated: true, completion: nil)
+        
+    
+              
+           
+               }
                
            
-           }
+        }
+        
+        
+    
+    
+        
     }
     
 
