@@ -94,7 +94,17 @@ class signup: UIViewController, UITextFieldDelegate {
     
     
     
-    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+           
+          enailTF.resignFirstResponder()
+              
+          passTF.resignFirstResponder()
+          
+          return true
+          
+          
+          
+      }
     
     
     

@@ -69,6 +69,41 @@ class addSetMenu: UIViewController, UITextViewDelegate, UITextFieldDelegate {
         goalTF.delegate = self
         
         
+        setmenuTF.attributedPlaceholder = NSAttributedString(string: "トレーニングメニュー", attributes: [NSAttributedString.Key.foregroundColor : UIColor.gray])
+        
+        kg1.attributedPlaceholder = NSAttributedString(string: "100", attributes: [NSAttributedString.Key.foregroundColor : UIColor.gray])
+        rep1.attributedPlaceholder = NSAttributedString(string: "3", attributes: [NSAttributedString.Key.foregroundColor : UIColor.gray])
+     
+        
+        kg2.attributedPlaceholder = NSAttributedString(string: "80", attributes: [NSAttributedString.Key.foregroundColor : UIColor.gray])
+        rep2.attributedPlaceholder = NSAttributedString(string: "10", attributes: [NSAttributedString.Key.foregroundColor : UIColor.gray])
+        
+        
+        kg3.attributedPlaceholder = NSAttributedString(string: "80", attributes: [NSAttributedString.Key.foregroundColor : UIColor.gray])
+        rep3.attributedPlaceholder = NSAttributedString(string: "10", attributes: [NSAttributedString.Key.foregroundColor : UIColor.gray])
+        
+        
+        kg4.attributedPlaceholder = NSAttributedString(string: "70", attributes: [NSAttributedString.Key.foregroundColor : UIColor.gray])
+        rep4.attributedPlaceholder = NSAttributedString(string: "10", attributes: [NSAttributedString.Key.foregroundColor : UIColor.gray])
+        
+        
+        kg5.attributedPlaceholder = NSAttributedString(string: "70", attributes: [NSAttributedString.Key.foregroundColor : UIColor.gray])
+        rep5.attributedPlaceholder = NSAttributedString(string: "10", attributes: [NSAttributedString.Key.foregroundColor : UIColor.gray])
+
+        
+        alphaKG.attributedPlaceholder = NSAttributedString(string: "60", attributes: [NSAttributedString.Key.foregroundColor : UIColor.gray])
+        
+        alphaRep.attributedPlaceholder = NSAttributedString(string: "10", attributes: [NSAttributedString.Key.foregroundColor : UIColor.gray])
+
+        goalTF.attributedPlaceholder = NSAttributedString(string: "目標などを記入する", attributes: [NSAttributedString.Key.foregroundColor : UIColor.gray])
+
+        
+        
+        
+        
+        
+        
+        
     }
     
 

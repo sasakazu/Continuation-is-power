@@ -54,20 +54,30 @@ class login: UIViewController, UITextFieldDelegate {
         secondViewController.modalPresentationStyle = .fullScreen
         
            self.present(secondViewController, animated: true, completion: nil)
-        
-    
-              
            
                }
                
            
         }
         
+    }
+    
+    
+    
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+         
+        emailTF.resignFirstResponder()
+            
+        passTF.resignFirstResponder()
         
-    
-    
+        return true
+        
+        
         
     }
+    
+    
     
 
  

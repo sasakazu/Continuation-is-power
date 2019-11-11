@@ -62,6 +62,8 @@ class editSetMenu: UIViewController, UITextFieldDelegate, UITextViewDelegate {
         
         memoView.delegate = self
         
+        memoView.layer.cornerRadius = 5
+        
         
         let currentuser = Auth.auth().currentUser
         
