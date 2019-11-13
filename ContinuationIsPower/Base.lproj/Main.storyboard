@@ -958,6 +958,7 @@
                                     <constraint firstAttribute="height" constant="30" id="R4y-v2-QZ2"/>
                                     <constraint firstAttribute="width" constant="374" id="ylF-gf-qNF"/>
                                 </constraints>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -978,6 +979,7 @@
                                     <constraint firstAttribute="width" constant="79" id="69R-yo-Sbe"/>
                                     <constraint firstAttribute="height" constant="30" id="HPI-wj-ljY"/>
                                 </constraints>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -998,7 +1000,7 @@
                                     <constraint firstAttribute="height" constant="30" id="M08-rH-riI"/>
                                     <constraint firstAttribute="width" constant="81" id="XQV-n2-74R"/>
                                 </constraints>
-                                <color key="textColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -1042,6 +1044,7 @@
                                     <constraint firstAttribute="height" constant="30" id="LzN-mY-AXd"/>
                                     <constraint firstAttribute="width" constant="79" id="Y7x-dO-9Qx"/>
                                 </constraints>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -1062,6 +1065,7 @@
                                     <constraint firstAttribute="width" constant="81" id="C8h-Kv-Vz8"/>
                                     <constraint firstAttribute="height" constant="30" id="xNC-NE-2rv"/>
                                 </constraints>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -1092,6 +1096,7 @@
                                     <constraint firstAttribute="width" constant="79" id="CM0-20-81n"/>
                                     <constraint firstAttribute="height" constant="30" id="QbX-ZZ-Mdx"/>
                                 </constraints>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -1112,6 +1117,7 @@
                                     <constraint firstAttribute="width" constant="81" id="RYL-IR-rBG"/>
                                     <constraint firstAttribute="height" constant="30" id="lTZ-2g-ib7"/>
                                 </constraints>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -1142,6 +1148,7 @@
                                     <constraint firstAttribute="height" constant="30" id="hgs-E1-eqf"/>
                                     <constraint firstAttribute="width" constant="79" id="rud-As-wlA"/>
                                 </constraints>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -1162,6 +1169,7 @@
                                     <constraint firstAttribute="height" constant="30" id="T8R-Zr-YvV"/>
                                     <constraint firstAttribute="width" constant="81" id="ZnA-bJ-ZnG"/>
                                 </constraints>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -1192,6 +1200,7 @@
                                     <constraint firstAttribute="height" constant="32" id="BU6-Mi-kjG"/>
                                     <constraint firstAttribute="width" constant="79" id="xk3-DL-jA9"/>
                                 </constraints>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -1212,6 +1221,7 @@
                                     <constraint firstAttribute="width" constant="81" id="UB6-oI-5hm"/>
                                     <constraint firstAttribute="height" constant="31" id="gEp-Wz-W7X"/>
                                 </constraints>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -1242,6 +1252,7 @@
                                     <constraint firstAttribute="width" constant="79" id="RaC-EN-pvI"/>
                                     <constraint firstAttribute="height" constant="30" id="dB9-X4-R7l"/>
                                 </constraints>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -1262,6 +1273,7 @@
                                     <constraint firstAttribute="height" constant="30" id="FCm-ke-suc"/>
                                     <constraint firstAttribute="width" constant="81" id="pB9-rP-Vgv"/>
                                 </constraints>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -1282,6 +1294,7 @@
                                     <constraint firstAttribute="height" constant="40" id="glv-UV-ABn"/>
                                     <constraint firstAttribute="width" constant="331" id="ozI-b8-NDB"/>
                                 </constraints>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
