@@ -27,10 +27,10 @@ class acount: UIViewController {
         let user = Auth.auth().currentUser
              
          if let user = user {
-            let uid = user.uid
+            let email = user.email
            
              
-            uidLabel.text = uid
+            uidLabel.text = email
         
         
         }

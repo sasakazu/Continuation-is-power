@@ -45,6 +45,7 @@ class addSetMenu: UIViewController, UITextViewDelegate, UITextFieldDelegate {
         goalTF.layer.cornerRadius = 3.0
         
         setmenuTF.delegate = self
+        setmenuTF.text = "トレーニングメニュー"
         
         kg1.delegate = self
         rep1.delegate = self
@@ -117,7 +118,7 @@ class addSetMenu: UIViewController, UITextViewDelegate, UITextFieldDelegate {
         let postid = NSUUID().uuidString
         
         let docData: [String: Any] = [
-            "セットネーム": setmenuTF.text ?? "",
+            "セットネーム": setmenuTF.text ?? "名前なし",
             "1セットKG": kg1.text ?? "",
             "1セットRep": rep1.text ?? "",
             "2セットKG": kg2.text ?? "",
@@ -145,7 +146,11 @@ class addSetMenu: UIViewController, UITextViewDelegate, UITextFieldDelegate {
             
             if let err = err {
                 print("Error writing document: \(err)")
-            } else {
+                
+//            }else if self.setmenuTF.text == ""  {
+////
+//            } else  {
+                   
                 print("Document successfully written!")
             }
         }

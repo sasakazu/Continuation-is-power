@@ -57,7 +57,7 @@ class setMenuDetail: UIViewController {
                     print("Document data was empty.")
                     return
                 }
-                print("Current data: \(data)")
+//                print("Current data: \(data)")
                 
                 self.setName.text = document["セットネーム"] as? String
                 
